@@ -1,0 +1,152 @@
+{
+  "strategies": [
+    {
+      "id": 1,
+      "category": "Rain Water Harvesting",
+      "name": "Capture & Conserve Rainwater",
+      "description": "Divert rainfall to storage ponds for use as high-quality water in mill processes",
+      "department": "General",
+      "savingsPotential": 500,
+      "implementation_cost": 75000,
+      "payback_months": 18,
+      "roi_percent": 8,
+      "status": "Active",
+      "impact": "High"
+    },
+    {
+      "id": 2,
+      "category": "Water Reuse",
+      "name": "RO Rejects Reuse",
+      "description": "Reuse RO reject water from DM plant complex as low-grade water in paper mill",
+      "department": "DM Water",
+      "savingsPotential": 250,
+      "implementation_cost": 45000,
+      "payback_months": 21,
+      "roi_percent": 6.7,
+      "status": "Active",
+      "impact": "Medium"
+    },
+    {
+      "id": 3,
+      "category": "Cooling Systems",
+      "name": "Cooling Tower Optimization",
+      "description": "Condition cooling water in CPP to reduce blow-down and fresh water makeup",
+      "department": "Others-Cooling water",
+      "savingsPotential": 150,
+      "implementation_cost": 120000,
+      "payback_months": 96,
+      "roi_percent": 1.25,
+      "status": "Planned",
+      "impact": "High"
+    },
+    {
+      "id": 4,
+      "category": "Heat Recovery",
+      "name": "Hot Condensate Recovery",
+      "description": "Cool hot condensate from paper machines through plate heat exchangers and reuse as DM water",
+      "department": "Paper Machines",
+      "savingsPotential": 200,
+      "implementation_cost": 85000,
+      "payback_months": 51,
+      "roi_percent": 2.35,
+      "status": "Planned",
+      "impact": "Medium"
+    },
+    {
+      "id": 5,
+      "category": "Effluent Management",
+      "name": "Effluent to Irrigation",
+      "description": "Divert effluent from pulping complex to sugar-cane plantation instead of drainage",
+      "department": "Wood Pulping",
+      "savingsPotential": 475,
+      "implementation_cost": 60000,
+      "payback_months": 15,
+      "roi_percent": 9.5,
+      "status": "Active",
+      "impact": "High"
+    },
+    {
+      "id": 6,
+      "category": "Boiler Management",
+      "name": "Boiler Blow-down Reduction",
+      "description": "Use advanced polyamine dosing to reduce CBD quantity and reuse small amounts",
+      "department": "Chemical Recovery",
+      "savingsPotential": 50,
+      "implementation_cost": 35000,
+      "payback_months": 84,
+      "roi_percent": 1.4,
+      "status": "Planned",
+      "impact": "Low"
+    },
+    {
+      "id": 7,
+      "category": "Maintenance",
+      "name": "Leak Detection & Repair",
+      "description": "Regular inspection and sealing of leaks in storage tanks using PENETRON compound",
+      "department": "General",
+      "savingsPotential": 120,
+      "implementation_cost": 25000,
+      "payback_months": 25,
+      "roi_percent": 5.76,
+      "status": "Active",
+      "impact": "Medium"
+    },
+    {
+      "id": 8,
+      "category": "Water Recycling",
+      "name": "Multi-Stage Water Reuse",
+      "description": "3-stage recycling: DM water → low-grade areas → toilet use → effluent → irrigation",
+      "department": "General",
+      "savingsPotential": 400,
+      "implementation_cost": 150000,
+      "payback_months": 45,
+      "roi_percent": 3.26,
+      "status": "Planned",
+      "impact": "High"
+    }
+  ],
+  "departments": [
+    {
+      "name": "Wood Pulping-Unbleached",
+      "current_consumption": 475,
+      "target_reduction_5pct": 451,
+      "target_reduction_10pct": 428,
+      "potential_strategies": [5]
+    },
+    {
+      "name": "Wood Pulping-Bleached",
+      "current_consumption": 318,
+      "target_reduction_5pct": 302,
+      "target_reduction_10pct": 286,
+      "potential_strategies": [5]
+    },
+    {
+      "name": "Staff Colony",
+      "current_consumption": 551,
+      "target_reduction_5pct": 523,
+      "target_reduction_10pct": 496,
+      "potential_strategies": [7]
+    },
+    {
+      "name": "Paper Machines",
+      "current_consumption": 395,
+      "target_reduction_5pct": 375,
+      "target_reduction_10pct": 356,
+      "potential_strategies": [4, 8]
+    },
+    {
+      "name": "DM Water",
+      "current_consumption": 250,
+      "target_reduction_5pct": 238,
+      "target_reduction_10pct": 225,
+      "potential_strategies": [2]
+    },
+    {
+      "name": "Others-Cooling water",
+      "current_consumption": 65,
+      "target_reduction_5pct": 62,
+      "target_reduction_10pct": 59,
+      "potential_strategies": [3]
+    }
+  ]
+}
