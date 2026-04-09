@@ -18,6 +18,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,11 +31,16 @@ jobs:
 
       - name: Install dependencies
         working-directory: watercon/frontend
-        run: npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps --verbose
 
       - name: Build
         working-directory: watercon/frontend
-        run: npm run build
+        run: npm run build -- --outDir dist
+
+      - name: Verify build output
+        run: |
+          ls -la watercon/frontend/dist/ || echo "dist folder not found!"
+          find watercon/frontend/dist -type f -name "*.html" -o -name "*.js" | head -20
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
