@@ -590,7 +590,6 @@ export default function App() {
           >
             Unlock
           </button>
-          <p className="text-xs text-slate-500 text-center mt-4">Demo Password: 123</p>
         </div>
       </div>
     );
