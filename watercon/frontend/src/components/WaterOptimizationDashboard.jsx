@@ -13,14 +13,21 @@ const WaterOptimizationDashboard = () => {
   useEffect(() => {
     // Load visualization data
     const basePath = import.meta.env.BASE_URL;
-    fetch(`${basePath}visualization_data.json`)
-      .then(res => res.json())
+    const dataPath = `${basePath}visualization_data.json`;
+    console.log('Fetching from:', dataPath);
+    
+    fetch(dataPath)
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then(data => {
+        console.log('Data loaded:', data);
         setVizData(data);
         setLoading(false);
       })
       .catch(err => {
-        console.error('Error loading data:', err);
+        console.error('Error loading data:', err, 'from:', dataPath);
         setLoading(false);
       });
   }, []);

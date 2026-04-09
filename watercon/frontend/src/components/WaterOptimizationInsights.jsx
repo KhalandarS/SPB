@@ -8,14 +8,21 @@ const WaterOptimizationInsights = () => {
 
   useEffect(() => {
     const basePath = import.meta.env.BASE_URL;
-    fetch(`${basePath}insights.json`)
-      .then(res => res.json())
+    const dataPath = `${basePath}insights.json`;
+    console.log('Fetching insights from:', dataPath);
+    
+    fetch(dataPath)
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then(data => {
+        console.log('Insights loaded:', data);
         setInsights(data);
         setLoading(false);
       })
       .catch(err => {
-        console.error('Error loading insights:', err);
+        console.error('Error loading insights:', err, 'from:', dataPath);
         setLoading(false);
       });
   }, []);
