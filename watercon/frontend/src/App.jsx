@@ -499,13 +499,17 @@ export default function App() {
   const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false);
 
   useEffect(() => {
+    const basePath = import.meta.env.BASE_URL;
+    console.log('Loading data from base path:', basePath);
+    
     Promise.all([
-      fetch('/data.json').then((res) => res.json()),
-      fetch('/consumption_breakup.json').then((res) => res.json()),
-      fetch('/norms.json').then((res) => res.json()),
-      fetch('/conservation_strategies.json').then((res) => res.json()),
+      fetch(`${basePath}data.json`).then((res) => res.json()),
+      fetch(`${basePath}consumption_breakup.json`).then((res) => res.json()),
+      fetch(`${basePath}norms.json`).then((res) => res.json()),
+      fetch(`${basePath}conservation_strategies.json`).then((res) => res.json()),
     ])
       .then(([monthlyData, consumptionBreakup, normsData, strategiesData]) => {
+        console.log('Data loaded successfully');
         setData(monthlyData);
         setBreakupData(consumptionBreakup);
         setNorms(normsData);
