@@ -13,9 +13,6 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-env:
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,11 +23,14 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22'
+
+      - name: Clean npm cache
+        run: npm cache clean --force
 
       - name: Install dependencies
         working-directory: watercon/frontend
-        run: npm install --legacy-peer-deps
+        run: npm install
 
       - name: Build
         working-directory: watercon/frontend
