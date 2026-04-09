@@ -1,13 +1,50 @@
-# React + Vite
+# SPB Erode Water Optimization Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Vite frontend for the Industrial Water Management & Optimization System at SPB Erode mill.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project provides an interactive dashboard for monitoring and optimizing water consumption in industrial settings, with real-time data visualization and conservation strategy management.
 
-## React Compiler
+## Features
+
+- **Real-time Dashboard**: Track water consumption across plant sections
+- **Analytics & Insights**: Performance metrics and trend analysis
+- **Optimization Strategies**: Detailed conservation initiatives with ROI calculations
+- **Interactive Charts**: Visual representations of consumption patterns and projections
+- **Admin Control Panel**: System configuration and monitoring
+
+## Technology Stack
+
+- **React 19**: UI framework
+- **Vite 7**: Build tool with HMR
+- **Recharts**: Data visualization
+- **Tailwind CSS 4**: Styling
+- **Lucide React**: Icons
+
+## Setup
+
+```bash
+npm install
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run preview  # Preview production build
+npm run lint     # Run ESLint
+```
+
+## Deployment
+
+This app is deployed to GitHub Pages at [khalandars.github.io/SPB](https://khalandars.github.io/SPB)
+
+## Data Files
+
+The app loads data from JSON files in `/public`:
+- `visualization_data.json` - Dashboard metrics and charts
+- `insights.json` - AI-generated insights and recommendations
+- `data.json` - Monthly consumption data
+- `consumption_breakup.json` - Departmental breakdown
+- `norms.json` - Target consumption norms
+- `conservation_strategies.json` - Conservation initiatives
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
