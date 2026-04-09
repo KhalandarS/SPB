@@ -1,0 +1,57 @@
+[
+  {
+    "station": "Chipper House",
+    "consumption": 480,
+    "percentage": 20
+  },
+  {
+    "station": "Wood Pulping-RDH",
+    "consumption": 310,
+    "percentage": 13
+  },
+  {
+    "station": "Bagasse Pulping",
+    "consumption": 100,
+    "percentage": 4
+  },
+  {
+    "station": "Staff Colony",
+    "consumption": 551,
+    "percentage": 22
+  },
+  {
+    "station": "Paper Machines",
+    "consumption": 395,
+    "percentage": 15
+  },
+  {
+    "station": "Chemical Recovery Complex",
+    "consumption": 200,
+    "percentage": 8
+  },
+  {
+    "station": "ClO2",
+    "consumption": 82,
+    "percentage": 3
+  },
+  {
+    "station": "DM Water",
+    "consumption": 250,
+    "percentage": 10
+  },
+  {
+    "station": "PCC",
+    "consumption": 24,
+    "percentage": 1
+  },
+  {
+    "station": "WPPS",
+    "consumption": 25,
+    "percentage": 1
+  },
+  {
+    "station": "Others-Cooling water etc.",
+    "consumption": 65,
+    "percentage": 3
+  }
+]

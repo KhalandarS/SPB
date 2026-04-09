@@ -1,0 +1,190 @@
+{
+  "section_performance": [
+    {
+      "section": "1. LEAKAGE DETECTION",
+      "current_loss_m3": 99280,
+      "estimated_reduction_m3_tonne": 1.58,
+      "priority": "CRITICAL",
+      "capex_lakhs": "80",
+      "monthly_savings_m3": 99280
+    },
+    {
+      "section": "2. DRAIN WATER REUSE",
+      "current_loss_m3": 350000,
+      "estimated_reduction_m3_tonne": 4.67,
+      "priority": "CRITICAL",
+      "capex_lakhs": "200",
+      "monthly_savings_m3": 280000
+    },
+    {
+      "section": "3. HOT EFFLUENT REUSE & HEAT RECOVERY",
+      "current_loss_m3": 165000,
+      "estimated_reduction_m3_tonne": 2.75,
+      "priority": "HIGH",
+      "capex_lakhs": "150",
+      "monthly_savings_m3": 135000
+    },
+    {
+      "section": "4. BAGASSE PULPING OPTIMIZATION",
+      "current_loss_m3": 35000,
+      "estimated_reduction_m3_tonne": 0.82,
+      "priority": "MEDIUM-HIGH",
+      "capex_lakhs": "80",
+      "monthly_savings_m3": 35000
+    },
+    {
+      "section": "5. COOLING WATER MAKEUP REDUCTION",
+      "current_loss_m3": 22750,
+      "estimated_reduction_m3_tonne": 1.13,
+      "priority": "HIGH",
+      "capex_lakhs": "40",
+      "monthly_savings_m3": 35000
+    },
+    {
+      "section": "6. DOMESTIC WATER REDUCTION",
+      "current_loss_m3": 450000,
+      "estimated_reduction_m3_tonne": 7.5,
+      "priority": "CRITICAL",
+      "capex_lakhs": "150",
+      "monthly_savings_m3": 300000
+    },
+    {
+      "section": "7. PAPER MACHINE & STOCK PREP OPTIMIZATION",
+      "current_loss_m3": 100000,
+      "estimated_reduction_m3_tonne": 2.63,
+      "priority": "HIGH",
+      "capex_lakhs": "250",
+      "monthly_savings_m3": 145000
+    },
+    {
+      "section": "8. DM WATER PLANT LOSS REDUCTION",
+      "current_loss_m3": 115000,
+      "estimated_reduction_m3_tonne": 1.92,
+      "priority": "HIGH",
+      "capex_lakhs": "100",
+      "monthly_savings_m3": 100000
+    },
+    {
+      "section": "9. CIRCULAR ECONOMY & REUSE STRATEGIES",
+      "current_loss_m3": 698000,
+      "estimated_reduction_m3_tonne": 11.63,
+      "priority": "STRATEGIC",
+      "capex_lakhs": "500",
+      "monthly_savings_m3": 500000
+    }
+  ],
+  "consumption_breakdown": [
+    {"section": "Staff Colony (Domestic)", "m3_month": 551000, "percent": 22.2, "status": "HIGH PRIORITY", "reduction_potential_percent": 54.6},
+    {"section": "Chipper House", "m3_month": 480000, "percent": 19.3, "status": "MATERIAL HANDLING", "reduction_potential_percent": 5.0},
+    {"section": "Paper Machines", "m3_month": 395000, "percent": 15.9, "status": "HIGH PRIORITY", "reduction_potential_percent": 39.2},
+    {"section": "Wood Pulping-RDH", "m3_month": 310000, "percent": 12.5, "status": "MEDIUM", "reduction_potential_percent": 8.1},
+    {"section": "DM Water (Power Plant)", "m3_month": 250000, "percent": 10.1, "status": "HIGH PRIORITY", "reduction_potential_percent": 32.0},
+    {"section": "Chemical Recovery", "m3_month": 200000, "percent": 8.1, "status": "DRAINAGE REUSE", "reduction_potential_percent": 50.0},
+    {"section": "Bagasse Pulping", "m3_month": 100000, "percent": 4.0, "status": "MEDIUM", "reduction_potential_percent": 38.5},
+    {"section": "Others", "m3_month": 196000, "percent": 7.9, "status": "LOW", "reduction_potential_percent": 15.0}
+  ],
+  "priority_matrix": {
+    "CRITICAL": [
+      {"area": "1. Leakage Detection", "savings_m3_mo": 99280, "impact": "4% system loss reduction"},
+      {"area": "2. Drain Water Reuse", "savings_m3_mo": 280000, "impact": "Recover 14% wasted drainage"},
+      {"area": "6. Domestic Water Reduction", "savings_m3_mo": 300000, "impact": "Rainwater + Fixtures: 54% reduction"}
+    ],
+    "HIGH": [
+      {"area": "3. Hot Effluent Reuse", "savings_m3_mo": 135000, "impact": "Heat recovery + MBR treatment"},
+      {"area": "5. Cooling Tower Optimization", "savings_m3_mo": 35000, "impact": "CoC increase 2.0→3.5"},
+      {"area": "7. Paper Machine Optimization", "savings_m3_mo": 145000, "impact": "Closed-loop retrofit + condensate recovery"},
+      {"area": "8. DM Plant Loss Reduction", "savings_m3_mo": 100000, "impact": "2-stage RO + CBD reuse"}
+    ],
+    "MEDIUM": [
+      {"area": "4. Bagasse Pulping", "savings_m3_mo": 35000, "impact": "Counter-current washing"}
+    ],
+    "STRATEGIC": [
+      {"area": "9. Circular Economy", "savings_m3_mo": 500000, "impact": "85% wastewater recycled - ZLD path"}
+    ]
+  },
+  "implementation_timeline": [
+    {"area": "1. Leakage Detection", "months": 3, "capex": "80-120", "reduction_m3_tonne": 1.58, "phase": "PHASE 1"},
+    {"area": "2. Drain Water Reuse", "months": 8, "capex": "200-300", "reduction_m3_tonne": 4.67, "phase": "PHASE 2"},
+    {"area": "3. Hot Effluent Reuse", "months": 10, "capex": "150-250", "reduction_m3_tonne": 2.75, "phase": "PHASE 2"},
+    {"area": "4. Bagasse Pulping", "months": 6, "capex": "80-120", "reduction_m3_tonne": 0.82, "phase": "PHASE 2"},
+    {"area": "5. Cooling Water Makeup", "months": 4, "capex": "40-60", "reduction_m3_tonne": 1.13, "phase": "PHASE 1"},
+    {"area": "6. Domestic Water Reduction", "months": 12, "capex": "150-200", "reduction_m3_tonne": 7.5, "phase": "PHASE 2-3"},
+    {"area": "7. Paper Machine Optimization", "months": 12, "capex": "250-350", "reduction_m3_tonne": 2.63, "phase": "PHASE 2-3"},
+    {"area": "8. DM Water Plant", "months": 9, "capex": "100-180", "reduction_m3_tonne": 1.92, "phase": "PHASE 2"},
+    {"area": "9. Circular Economy", "months": 12, "capex": "500-700", "reduction_m3_tonne": 11.63, "phase": "PHASE 3"}
+  ],
+  "specific_consumption_projection": {
+    "baseline_m3_tonne": 42.4,
+    "optimized_m3_tonne": 34.2,
+    "industry_benchmark": 59.0,
+    "improvement_m3_tonne": 8.2,
+    "improvement_percent": 19.3,
+    "vs_benchmark_improvement": 24.8
+  },
+  "phase_breakdown": {
+    "PHASE_1_MONTHS_1_2": {
+      "focus": "Quick Wins & Foundation",
+      "expected_reduction_m3_mo": 461000,
+      "expected_reduction_m3_tonne": 7.3,
+      "capex_lakhs": "200-400",
+      "key_actions": [
+        "Install metering infrastructure",
+        "Leak detection & repair",
+        "Boiler/Cooling CoC optimization",
+        "Domestic fixture upgrades"
+      ]
+    },
+    "PHASE_2_MONTHS_3_9": {
+      "focus": "Infrastructure Deployment",
+      "expected_reduction_m3_mo": 300000,
+      "expected_reduction_m3_tonne": 5.0,
+      "capex_lakhs": "700-1000",
+      "key_actions": [
+        "Drainage segregation & tanks",
+        "Heat recovery network (PHE)",
+        "Rainwater harvesting system",
+        "MBR membrane treatment",
+        "Paper machine improvements"
+      ]
+    },
+    "PHASE_3_MONTHS_10_12": {
+      "focus": "Advanced Systems & Optimization",
+      "expected_reduction_m3_mo": 100000,
+      "expected_reduction_m3_tonne": 1.67,
+      "capex_lakhs": "400-600",
+      "key_actions": [
+        "DM 2-stage RO system",
+        "PM closed-loop retrofit",
+        "CBD recovery system",
+        "Advanced polishing (UV/Ozone)",
+        "Full system monitoring & optimization"
+      ]
+    }
+  },
+  "financial_summary": {
+    "total_capex_lakhs": 1350,
+    "total_capex_range": "1350-2050",
+    "annual_opex_lakhs": 86,
+    "annual_opex_range": "86-125",
+    "annual_water_cost_current_crore": 40,
+    "annual_water_cost_optimized_crore": 25,
+    "annual_savings_crore": 15,
+    "payback_period_years": 3.0,
+    "roi_multiple": 11.0,
+    "water_cost_per_m3_rupees": 12
+  },
+  "summary_kpi": {
+    "current_total_drawl_m3_mo": 2482000,
+    "optimized_total_drawl_m3_mo": 1621000,
+    "annual_water_savings_m3": 10332000,
+    "current_specific_consumption": 42.4,
+    "optimized_specific_consumption": 34.2,
+    "total_reduction_percentage": 34.7,
+    "specific_consumption_improvement_percent": 19.3,
+    "vs_59_m3tonne_benchmark": {
+      "current_performance": "28% BETTER than benchmark",
+      "optimized_performance": "42% BETTER than benchmark",
+      "gap_closure": "14 percentage points"
+    }
+  }
+}

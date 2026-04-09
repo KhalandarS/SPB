@@ -1,0 +1,211 @@
+{
+  "strategies": [
+    {
+      "id": 1,
+      "category": "System Losses",
+      "name": "Leakage Detection & Arresting",
+      "description": "Install water meters, acoustic leak detection, pressure testing, night-flow analysis. Repair leaks with epoxy coatings + automatic alarms. Reduce system loss from 4% to <1%.",
+      "department": "General",
+      "savingsPotential": 99280,
+      "implementation_cost": 8000000,
+      "payback_months": 36,
+      "roi_percent": 12.4,
+      "status": "Active",
+      "impact": "Critical",
+      "expected_reduction_m3_tonne": 1.58,
+      "priority": "CRITICAL"
+    },
+    {
+      "id": 2,
+      "category": "Water Reuse",
+      "name": "Drainage Water Reuse & Recovery",
+      "description": "Create segregated 3-line drainage network. Install 3 isolation tanks (1000 m³ each). Deploy MBR for 200k m³/mo. Recycle 250-340k m³/month previously wasted water.",
+      "department": "General",
+      "savingsPotential": 350000,
+      "implementation_cost": 25000000,
+      "payback_months": 60,
+      "roi_percent": 16.8,
+      "status": "Active",
+      "impact": "Critical",
+      "expected_reduction_m3_tonne": 4.67,
+      "priority": "CRITICAL"
+    },
+    {
+      "id": 3,
+      "category": "Heat Recovery",
+      "name": "Hot Effluent Reuse & Heat Recovery",
+      "description": "Install Plate Heat Exchangers at 3-4 effluent sources. Cool 75-85°C to 25-30°C. Deploy Submerged MF (0.2 micron) + RO polishing. Expected displacement: 120-150k m³/month.",
+      "department": "Chemical Recovery",
+      "savingsPotential": 165000,
+      "implementation_cost": 20000000,
+      "payback_months": 120,
+      "roi_percent": 9.9,
+      "status": "Planned",
+      "impact": "High",
+      "expected_reduction_m3_tonne": 2.75,
+      "priority": "HIGH"
+    },
+    {
+      "id": 4,
+      "category": "Process Optimization",
+      "name": "Bagasse Pulping Optimization",
+      "description": "Implement counter-current multi-stage washing. Install rotary vacuum screens. Pre-dry bagasse input. Recirculate 60-70% water. COD-based control. Expected savings: 28-42k m³/mo.",
+      "department": "Wood Pulping",
+      "savingsPotential": 35000,
+      "implementation_cost": 10000000,
+      "payback_months": 48,
+      "roi_percent": 8.4,
+      "status": "Planned",
+      "impact": "High",
+      "expected_reduction_m3_tonne": 0.82,
+      "priority": "MEDIUM-HIGH"
+    },
+    {
+      "id": 5,
+      "category": "Cooling Systems",
+      "name": "Cooling Water Makeup Reduction",
+      "description": "Install real-time conductivity sensor. Increase CoC from 2.0-2.5 → 3.0-3.5. Route RO rejects (40-50k m³/mo) + treated drainage to tower. Displace 35-45k m³/month fresh water.",
+      "department": "Others-Cooling water",
+      "savingsPotential": 40000,
+      "implementation_cost": 5000000,
+      "payback_months": 48,
+      "roi_percent": 7.5,
+      "status": "Planned",
+      "impact": "High",
+      "expected_reduction_m3_tonne": 1.13,
+      "priority": "HIGH"
+    },
+    {
+      "id": 6,
+      "category": "Domestic Water",
+      "name": "Domestic Water Reduction & Rainwater Harvesting",
+      "description": "3-Phase approach: (1) Metering + leak repair + fixture upgrades (M1-3), (2) Rainwater harvesting 1000m³ tank + seasonal 12-18k m³/mo (M4-8), (3) Greywater reuse for toilets (M9-12). Total: 250-300k m³/mo reduction.",
+      "department": "Staff Colony",
+      "savingsPotential": 300000,
+      "implementation_cost": 20000000,
+      "payback_months": 60,
+      "roi_percent": 10.8,
+      "status": "Active",
+      "impact": "Critical",
+      "expected_reduction_m3_tonne": 7.50,
+      "priority": "CRITICAL"
+    },
+    {
+      "id": 7,
+      "category": "Paper Machine Optimization",
+      "name": "Paper Machine & Stock Prep Optimization",
+      "description": "Felt washing closed-loop (18-25k m³/mo), hot condensate recovery (35-50k m³/mo), broke recycling optimization (12-18k m³/mo), vacuum water recovery (12-20k m³/mo). Advanced closed-loop retrofit: target 90-95% recirculation.",
+      "department": "Paper Machines",
+      "savingsPotential": 230000,
+      "implementation_cost": 30000000,
+      "payback_months": 96,
+      "roi_percent": 8.2,
+      "status": "Planned",
+      "impact": "High",
+      "expected_reduction_m3_tonne": 2.63,
+      "priority": "HIGH"
+    },
+    {
+      "id": 8,
+      "category": "DM Plant Optimization",
+      "name": "DM Water Plant Loss Reduction",
+      "description": "Boiler CoC optimization (25-35k m³/mo), CBD recovery (28-37k m³/mo), DM reject 2-stage RO (30-37.5k m³/mo), regeneration recovery, integrate alternative sources (RWH, treated drainage, PM condensate). Total: 80-120k m³/mo reduction.",
+      "department": "DM Water",
+      "savingsPotential": 120000,
+      "implementation_cost": 16000000,
+      "payback_months": 80,
+      "roi_percent": 7.5,
+      "status": "Planned",
+      "impact": "High",
+      "expected_reduction_m3_tonne": 1.92,
+      "priority": "HIGH"
+    },
+    {
+      "id": 9,
+      "category": "Circular Economy",
+      "name": "Circular Economy & Reuse Strategies",
+      "description": "4-tier cascading model: Tier 1 (DM + condensate to cooling), Tier 2 (filtered drainage to PM/cooling), Tier 3 (MBR-treated effluent to irrigation), Tier 4 (brine to evaporation). Achieve 85%+ wastewater recycling and ZLD certification.",
+      "department": "General",
+      "savingsPotential": 698000,
+      "implementation_cost": 60000000,
+      "payback_months": 120,
+      "roi_percent": 11.6,
+      "status": "Planned",
+      "impact": "Critical",
+      "expected_reduction_m3_tonne": 11.63,
+      "priority": "STRATEGIC"
+    }
+  ],
+  "departments": [
+    {
+      "name": "Wood Pulping-Unbleached",
+      "current_consumption": 40,
+      "target_reduction_5pct": 38,
+      "target_reduction_10pct": 36,
+      "potential_strategies": [4, 9]
+    },
+    {
+      "name": "Wood Pulping-Bleached",
+      "current_consumption": 51,
+      "target_reduction_5pct": 48,
+      "target_reduction_10pct": 46,
+      "potential_strategies": [4, 9]
+    },
+    {
+      "name": "Staff Colony",
+      "current_consumption": 551,
+      "target_reduction_5pct": 523,
+      "target_reduction_10pct": 496,
+      "potential_strategies": [6, 1]
+    },
+    {
+      "name": "Chipper House",
+      "current_consumption": 480,
+      "target_reduction_5pct": 456,
+      "target_reduction_10pct": 432,
+      "potential_strategies": [2, 9]
+    },
+    {
+      "name": "Paper Machines",
+      "current_consumption": 395,
+      "target_reduction_5pct": 375,
+      "target_reduction_10pct": 356,
+      "potential_strategies": [7, 3, 9]
+    },
+    {
+      "name": "RDH",
+      "current_consumption": 310,
+      "target_reduction_5pct": 295,
+      "target_reduction_10pct": 279,
+      "potential_strategies": [2, 9]
+    },
+    {
+      "name": "DM Water",
+      "current_consumption": 250,
+      "target_reduction_5pct": 238,
+      "target_reduction_10pct": 225,
+      "potential_strategies": [8, 2, 3, 9]
+    },
+    {
+      "name": "Chemical Recovery",
+      "current_consumption": 200,
+      "target_reduction_5pct": 190,
+      "target_reduction_10pct": 180,
+      "potential_strategies": [3, 8, 9]
+    },
+    {
+      "name": "Bagasse Pulping",
+      "current_consumption": 100,
+      "target_reduction_5pct": 95,
+      "target_reduction_10pct": 90,
+      "potential_strategies": [4, 2, 9]
+    },
+    {
+      "name": "Cooling Systems",
+      "current_consumption": 65,
+      "target_reduction_5pct": 62,
+      "target_reduction_10pct": 59,
+      "potential_strategies": [5, 9]
+    }
+  ]
+}
