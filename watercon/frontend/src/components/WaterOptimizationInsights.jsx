@@ -7,7 +7,8 @@ const WaterOptimizationInsights = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/insights.json')
+    const basePath = import.meta.env.BASE_URL;
+    fetch(`${basePath}insights.json`)
       .then(res => res.json())
       .then(data => {
         setInsights(data);

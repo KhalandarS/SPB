@@ -12,7 +12,8 @@ const WaterOptimizationDashboard = () => {
 
   useEffect(() => {
     // Load visualization data
-    fetch('/visualization_data.json')
+    const basePath = import.meta.env.BASE_URL;
+    fetch(`${basePath}visualization_data.json`)
       .then(res => res.json())
       .then(data => {
         setVizData(data);
